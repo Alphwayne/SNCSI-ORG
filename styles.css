@@ -12,13 +12,12 @@ html {
 
 /* Ensure the page has content below */
 body {
-    /* Add padding-top to prevent content from hiding under the fixed navbar */
-    padding-top: 100px; /* Adjust based on the height of your navbar */
+    padding-top: 100px; 
     background: linear-gradient(135deg, rgba(240, 235, 235, 0.9), rgba(245, 241, 241, 0.9));
-    color: #333; /* Text color */
+    color: #333;
 }
 
-/* Ensure the page content is scrollable */
+/* makes page scrollable */
 html, body {
     height: 100%;
 }
@@ -80,7 +79,7 @@ section {
 
 /* Styling for Links */
 .navbar-links a {
-    color: #e8efff; /* Soft white-blue for text */
+    color: #e8efff; 
     text-decoration: none;
     position: relative;
     padding: 5px;
@@ -89,15 +88,15 @@ section {
 
 /* Hover Effect */
 .navbar-links a:hover {
-    background: linear-gradient(135deg, #667d9a, #323989); /* Sunset orange-to-gold gradient */
-    color: #ffffff; /* Bright white text */
+    background: linear-gradient(135deg, #667d9a, #323989); 
+    color: #ffffff; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     transform: scale(1.1);
 }
-/* Add this styling for the new "Home" link */
+/*  "Home" nav link */
 .navbar-links .home-link {
-    color: #e8efff; /* Soft white-blue for text */
+    color: #e8efff; 
     text-decoration: none;
     position: relative;
     padding: 5px;
@@ -106,8 +105,8 @@ section {
 
 /* Hover Effect for Home link */
 .navbar-links .home-link:hover {
-    background: linear-gradient(135deg, #667d9a, #323989); /* Sunset orange-to-gold gradient */
-    color: #ffffff; /* Bright white text */
+    background: linear-gradient(135deg, #667d9a, #323989); 
+    color: #ffffff; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     transform: scale(1.1);
@@ -123,13 +122,13 @@ section {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 8px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Violet-to-blue gradient */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
     box-shadow: 0 4px 12px rgba(106, 17, 203, 0.6);
     transition: all 0.3s ease-in-out;
 }
 
 .navbar-donate a:hover {
-    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient */
+    background: linear-gradient(135deg, #2575fc, #6a11cb); 
     box-shadow: 0 6px 15px rgba(106, 17, 203, 0.8);
     transform: translateY(-2px);
 }
@@ -149,7 +148,7 @@ section {
 .dropdown-content {
     display: none;
     position: absolute;
-    background: linear-gradient(135deg, #6e7fab, #264472); /* Tropical gold-to-teal gradient */
+    background: linear-gradient(135deg, #6e7fab, #264472); 
     border-radius: 12px;
     top: 100%;
     left: 0;
@@ -162,7 +161,7 @@ section {
 .dropdown-content a {
     display: block;
     padding: 10px 15px;
-    color: #ffffff; /* White text */
+    color: #ffffff; 
     text-decoration: none;
     font-family: 'Cinzel Decorative', cursive;
     transition: all 0.3s ease;
@@ -171,7 +170,7 @@ section {
 
 /* Hover effect for dropdown items */
 .dropdown-content a:hover {
-    background: linear-gradient(135deg, #6d74b1, #4035d4); /* Soft lilac-to-pink gradient */
+    background: linear-gradient(135deg, #6d74b1, #4035d4); 
     color: #2a2a2a; /* Contrasting dark text */
     transform: translateX(8px);
 }
@@ -191,7 +190,7 @@ section {
     position: absolute;
     top: 0;
     left: 100%;
-    background: linear-gradient(135deg, #7f7fd5, #1c2941, #2a4c69); /* Blue-purple-to-aqua gradient */
+    background: linear-gradient(135deg, #7f7fd5, #1c2941, #2a4c69); 
     border-radius: 12px;
     padding: 10px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
@@ -201,7 +200,7 @@ section {
 .dropdown-submenu-content a {
     display: block;
     padding: 10px 15px;
-    color: #ffffff; /* White text */
+    color: #ffffff; 
     text-decoration: none;
     font-family: 'Cinzel Decorative', cursive;
     transition: all 0.3s ease;
@@ -210,11 +209,11 @@ section {
 
 /* Submenu hover effect */
 .dropdown-submenu-content a:hover {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Soft pastel pink-to-rose gradient */
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); 
     transform: translateX(8px);
 }
 
-/* Show submenu on hover */
+/* Shows submenu on hover */
 .dropdown:hover .dropdown-submenu-content {
     display: block;
 }
@@ -254,7 +253,7 @@ section {
     gap: 30px;
     margin: 50px 0;
     width: 100%;
-    height: 500px;  /* Big section */
+    height: 500px;  
 }
 
 /* Hexagon Shape Styling */
@@ -350,7 +349,7 @@ section {
     border-radius: 15px;
     padding: 40px;
     position: relative;
-    margin-bottom: 30px; /* Reduce this value as needed */
+    margin-bottom: 30px; 
 }
 
 /* Bouncing Shapes Container */
@@ -412,7 +411,7 @@ section {
     }
 }
 
-/* Creative Movement Effect for the Second Nav (Mission Nav) */
+/* Movement Effect for the Second Nav (Mission Nav) */
 @keyframes move {
     0% {
         left: 0%;
@@ -551,7 +550,7 @@ section {
     border-color: #42a5f5;
 }
 
-/* Remove Bullet Points from Core Values */
+/* Removes Bullet Points from Core Values */
 #core-values-content ul {
     list-style-type: none;
     padding: 0;
@@ -563,24 +562,24 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background: linear-gradient(135deg, #cfd9df, #e2dee9); /* Misty teal and soft lavender gradient */
-    border-radius: 20px; /* Curved edges for the section */
+    background: linear-gradient(135deg, #cfd9df, #e2dee9); 
+    border-radius: 20px; 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px; /* Reduced space below the section */
+    margin-bottom: 30px; 
 }
 
 /* About Text Section */
 .about-text {
     flex: 1;
-    padding-right: 15px; /* Reduced padding for text */
+    padding-right: 15px; 
 }
 
 /* Animated Header */
 .about-header {
-    font-family: 'Dancing Script', cursive; /* Fun and stylish font */
-    font-size: 2.5rem; /* Reduced font size for header */
+    font-family: 'Dancing Script', cursive; 
+    font-size: 2.5rem; 
     text-align: left;
-    color: #5b6978; /* Subtle dusk blue */
+    color: #5b6978; 
     animation: danceGlow 3s infinite ease-in-out;
 }
 
@@ -605,12 +604,12 @@ section {
 
 /* About Us Content Text with Calligraphy Font */
 .about-content {
-    font-family: 'Great Vibes', cursive; /* Calligraphy font for content */
-    font-size: 1.2rem; /* Reduced font size for content */
-    line-height: 1.8; /* Adjusted line height for more compact text */
-    color: #3e4a52; /* Deep dusk teal */
+    font-family: 'Great Vibes', cursive; 
+    font-size: 1.2rem; 
+    line-height: 1.8; 
+    color: #3e4a52; 
     letter-spacing: 0.5px;
-    background: rgba(255, 255, 255, 0.9); /* Light neutral background */
+    background: rgba(255, 255, 255, 0.9); 
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -631,7 +630,7 @@ section {
     border-radius: 50%;
     overflow: hidden;
     animation: spin 10s linear infinite;
-    border: 5px solid #a8b4c0; /* Light teal-gray border */
+    border: 5px solid #a8b4c0; 
 }
 
 .image-round {
@@ -676,12 +675,12 @@ section {
 .contact-info-modern {
     position: relative;
     padding: 30px 10px;
-    background: linear-gradient(135deg, #4e73df, #a0c4ff); /* Soft gradient tones */
-    color: #f8f9fa; /* Light muted white */
+    background: linear-gradient(135deg, #4e73df, #a0c4ff); 
+    color: #f8f9fa; 
     overflow: hidden;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
     margin-bottom: 50px;
 }
 
@@ -711,7 +710,7 @@ section {
     font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 8px;
-    color: #323c7a; /* Soft lavender */
+    color: #323c7a; 
     text-transform: uppercase;
     letter-spacing: 1px;
     animation: fadeIn 2s ease-out;
@@ -720,7 +719,7 @@ section {
 /* Description */
 .contact-description {
     font-size: 0.9rem;
-    color: #e6ecf0; /* Muted light gray */
+    color: #e6ecf0; 
     margin-bottom: 20px;
     line-height: 1.5;
 }
@@ -734,10 +733,10 @@ section {
 }
 
 .contact-card {
-    background: #6d9ff2; /* Muted blue */
+    background: #6d9ff2; 
     padding: 12px 15px;
     border-radius: 15px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); 
     text-align: left;
     max-width: 200px;
     flex: 1;
@@ -746,13 +745,13 @@ section {
 
 .contact-card:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 /* Card Icon */
 .card-icon {
     font-size: 1.5rem;
-    color: #8e9efa; /* Lavender */
+    color: #8e9efa; 
     margin-bottom: 5px;
 }
 
@@ -769,7 +768,7 @@ section {
 .card-link {
     display: block;
     font-size: 0.8rem;
-    color: #343c68; /* Lavender */
+    color: #343c68; 
     text-decoration: none;
     margin-bottom: 2px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
@@ -777,7 +776,7 @@ section {
 
 .card-link:hover {
     color: #ffffff;
-    text-shadow: 0 0 5px #8e9efa, 0 0 10px #ffffff; /* Glow effect */
+    text-shadow: 0 0 5px #8e9efa, 0 0 10px #ffffff; 
 }
 
 /* Responsive Design */
@@ -809,7 +808,7 @@ section {
 /* Bicycle Animation */
 .bicycle-animation {
     position: absolute;
-    top: 10px; /* Positioned within the footer */
+    top: 10px; 
     left: -100px; /* Start off-screen to the left */
     width: 100%;
     height: 100px; /* Ensure it's visible */
@@ -841,7 +840,7 @@ section {
     height: 20px;
     border-radius: 50%;
     background-color: #000;
-    border: 3px solid #fff; /* White spokes */
+    border: 3px solid #fff; 
 }
 
 .front-wheel {
@@ -879,7 +878,6 @@ section {
     }
 }
 
-/* education page section */
   /* Educational Section Styling */
   .educational-section {
     padding: 60px 20px;
@@ -1202,7 +1200,7 @@ section {
 .footer-description {
     font-size: 16px;
     line-height: 1.6;
-    color: #dcdcdc; /* Light grey text */
+    color: #dcdcdc; 
     margin-bottom: 20px;
 }
 
@@ -1246,7 +1244,7 @@ section {
 }
 
 .footer-links a:hover {
-    color: #ff6f61; /* Coral color on hover */
+    color: #ff6f61; 
     transform: scale(1.05);
 }
 
@@ -1265,7 +1263,7 @@ section {
     font-family: 'Cinzel Decorative', cursive;
 }
 
-/* Social Media Icons (Vertical Layout) */
+/* Social Media Icons */
 .footer-socials .social-icons {
     display: flex;
     flex-direction: column;
@@ -1291,7 +1289,7 @@ section {
 }
 
 .social-link:hover {
-    color: #6a11cb; /* Violet color on hover */
+    color: #6a11cb; 
     transform: translateY(-5px);
 }
 
@@ -1310,6 +1308,8 @@ section {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+
+    /* still footer */
     .footer-container {
         flex-direction: column;
         align-items: center;
