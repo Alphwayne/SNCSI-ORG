@@ -95,6 +95,24 @@ section {
     border-radius: 8px;
     transform: scale(1.1);
 }
+/* Add this styling for the new "Home" link */
+.navbar-links .home-link {
+    color: #e8efff; /* Soft white-blue for text */
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Home link */
+.navbar-links .home-link:hover {
+    background: linear-gradient(135deg, #667d9a, #323989); /* Sunset orange-to-gold gradient */
+    color: #ffffff; /* Bright white text */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    transform: scale(1.1);
+}
+
 
 /* Donate Button */
 .navbar-donate a {
