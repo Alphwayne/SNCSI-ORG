@@ -224,7 +224,10 @@ section {
     display: block;
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
+
+     /* Navbar Styling */
     .navbar {
         flex-direction: column;
         padding: 10px 15px;
@@ -314,6 +317,8 @@ section {
 
 /* Responsive Design for Hexagons */
 @media screen and (max-width: 768px) {
+
+    /*  Hexagons */
     .hexagon-banner {
         flex-direction: column;
         gap: 20px;
