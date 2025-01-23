@@ -1325,5 +1325,50 @@ section {
     }
 }
 
+/* Community Outreach Section Styling */
+.community-outreach {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #e3fdfd, #cbf1f5);
+    font-family: 'Arial', sans-serif;
+}
 
+.community-outreach h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00796b; /* Dark green-blue for the title */
+}
 
+.community-outreach p {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #004d40; /* Slightly darker green for text */
+}
+
+.community-outreach .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.community-outreach .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 128, 128, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community-outreach .gallery img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 20px rgba(0, 128, 128, 0.3);
+}
+
+.community-outreach .gallery img:active {
+    transform: scale(0.96);
+    box-shadow: 0 6px 10px rgba(0, 128, 128, 0.2);
+}
