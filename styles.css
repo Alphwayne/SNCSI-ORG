@@ -1088,52 +1088,63 @@ section {
 }
 
 
- /* History Page Styles */
- .history-page {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #f4f9f9, #dce8f2);
-    font-family: 'Cinzel Decorative', cursive;
-    color: #333;
+/* History Page Styles */
+.history-page {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #e9f7fa, #d1e6f9);
+    font-family: 'Poppins', sans-serif;
+    color: #2b2b2b;
 }
 
 .history-page h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
-    color: #3c4b93;
-    margin-bottom: 20px;
+    color: #2e4a9e;
+    margin-bottom: 30px;
+    font-weight: 700; /* Bolder font */
+    letter-spacing: 1.5px;
 }
 
 .history-page h2 {
-    font-size: 2rem;
-    color: #6b8e23;
-    margin-top: 40px;
+    font-size: 2.2rem;
+    color: #558b2f;
+    margin-top: 50px;
     text-align: center;
+    font-weight: 600;
 }
 
 .history-page p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.8;
     margin: 20px 0;
     text-align: justify;
-    max-width: 800px;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
+    color: #444; /* Slightly softer text color */
 }
 
 .history-page .core-values {
-    margin-top: 40px;
-    padding: 20px;
-    border: 2px solid #3c4b93;
-    border-radius: 10px;
-    background: #fff;
+    margin-top: 50px;
+    padding: 30px;
+    border: none;
+    border-radius: 12px;
+    background: #ffffff;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.history-page .core-values:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
 }
 
 .history-page .core-values h3 {
-    font-size: 1.5rem;
-    color: #d17a22;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #e67e22;
+    margin-bottom: 15px;
+    font-weight: 700; /* Bold heading */
+    letter-spacing: 1px;
 }
 
 .history-page .core-values ul {
@@ -1145,26 +1156,41 @@ section {
 .history-page .core-values ul li {
     font-size: 1.2rem;
     color: #555;
-    margin: 10px 0;
+    margin: 12px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.history-page .core-values ul li::before {
+    content: '✔';
+    font-size: 1rem;
+    color: #3c4b93;
+    position: absolute;
+    left: 0;
+    top: 2px;
 }
 
 .history-page .cta {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .history-page .cta a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600; /* Bolder font */
     color: #fff;
-    background: #6b8e23;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background: linear-gradient(135deg, #6b8e23, #3c4b93);
+    padding: 12px 25px;
+    border-radius: 8px;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .history-page .cta a:hover {
-    background: #3c4b93;
+    background: linear-gradient(135deg, #3c4b93, #6b8e23);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer Container */
