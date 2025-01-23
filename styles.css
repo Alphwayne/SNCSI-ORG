@@ -27,13 +27,17 @@ section {
     margin-bottom: 50px;
 }
 
-/* Navbar */
+/* Navbar Background with Isolated Slash */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Deep modern blue gradient */
+    background: linear-gradient(135deg, 
+        #ffffff 20%, /* Pure white slash, extended further */
+        transparent 20%, /* Transparent to create sharp diagonal separation */
+        #1e3c72 21%, /* Start blue gradient after the slash */
+        #2a5298); /* Continue deep blue gradient */
     color: #ffffff;
     position: fixed;
     top: 0;
@@ -41,25 +45,32 @@ section {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    isolation: isolate; /* Ensures no blending with other elements */
 }
 
-/* tiny stars */
+/* Scoped tiny stars for navbar */
 .navbar::before,
 .navbar::after {
     content: "★"; /* Unicode character for star */
-    font-size: 20px; 
-    color: #ffffff; 
+    font-size: 20px;
     position: absolute;
-    bottom: 10px; 
+    bottom: 10px;
+    pointer-events: none; /* Ensure they don't interfere with interactions */
 }
 
-
+/* Left star with navbar gradient color */
 .navbar::before {
     left: 10px; /* Position star on the bottom left */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Navbar gradient */
+    background-clip: text; /* Clip the gradient to the text */
+    -webkit-background-clip: text; /* Webkit-specific clip */
+    color: transparent; /* Transparent color to show gradient */
 }
 
+/* Right star remains white */
 .navbar::after {
     right: 10px; /* Position star on the bottom right */
+    color: #ffffff; /* White color */
 }
 
 
@@ -68,6 +79,7 @@ section {
 .navbar-logo img {
     height: 100px;
     width: 150px;
+    z-index: 1; /* Ensure logo stays visible */
 }
 
 /* Navbar Links */
