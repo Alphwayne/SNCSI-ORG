@@ -53,6 +53,26 @@ section {
     bottom: 10px; 
 }
 
+/* Logo Container with Splash Effect */
+.navbar-logo {
+    position: relative;
+}
+
+.navbar-logo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px; /* Adjust based on the logo size */
+    height: 120px;
+    background: white;
+    border-radius: 50%; /* Circular splash */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional for depth */
+    z-index: -1; /* Send the splash behind the logo */
+}
+
+
 .navbar::before {
     left: 10px; /* Position star on the bottom left */
 }
@@ -67,6 +87,7 @@ section {
 .navbar-logo img {
     height: 100px;
     width: 150px;
+    z-index: 1; /* Ensure the logo stays above the splash */
 }
 
 /* Navbar Links */
