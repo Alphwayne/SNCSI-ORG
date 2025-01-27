@@ -1157,111 +1157,231 @@ section {
     transform: scale(0.95);
 }
 
-
-/* History Page Styles */
-.history-page {
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #e9f7fa, #d1e6f9);
-    font-family: 'Poppins', sans-serif;
-    color: #2b2b2b;
+/* Smilenation Section */
+.smilenation-section {
+    padding: 30px 20px 80px;
+    color: #444;
+    background-color: #f9fafb; /* Light grey for a softer background */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    margin: 40px auto;
+    max-width: 1200px;
 }
 
-.history-page h1 {
-    font-size: 3.5rem;
-    text-align: center;
-    color: #2e4a9e;
-    margin-bottom: 30px;
-    font-weight: 700; /* Bolder font */
+/* Smilenation Container */
+.smilenation-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Content */
+.smilenation-content {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 30px;
+}
+
+.smilenation-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #4a6fa5; /* Muted blue for elegance */
+    margin-bottom: 20px;
+    text-transform: capitalize;
     letter-spacing: 1.5px;
+    font-family: 'Merriweather', serif;
 }
 
-.history-page h2 {
-    font-size: 2.2rem;
-    color: #558b2f;
-    margin-top: 50px;
-    text-align: center;
-    font-weight: 600;
+.smilenation-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555; /* Neutral grey for readability */
+    margin-bottom: 30px;
 }
 
-.history-page p {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    margin: 20px 0;
-    text-align: justify;
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #444; /* Slightly softer text color */
+/* Image */
+.smilenation-image {
+    flex: 1;
+    max-width: 45%;
+    margin-top: 30px;
 }
 
-.history-page .core-values {
-    margin-top: 50px;
-    padding: 30px;
-    border: none;
+.smilenation-img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
     border-radius: 12px;
-    background: #ffffff;
-    text-align: center;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
 
-.history-page .core-values:hover {
-    transform: scale(1.02); /* Slight zoom effect on hover */
+.smilenation-image:hover .smilenation-img {
+    transform: scale(1.05); /* Gentle zoom */
 }
 
-.history-page .core-values h3 {
-    font-size: 1.8rem;
-    color: #e67e22;
-    margin-bottom: 15px;
-    font-weight: 700; /* Bold heading */
-    letter-spacing: 1px;
+/* Cards Section */
+.smilenation-card-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.history-page .core-values ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.smilenation-card {
+    background-color: #ffffff; /* Clean white card */
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 350px;
+    margin-bottom: 20px;
 }
 
-.history-page .core-values ul li {
-    font-size: 1.2rem;
-    color: #555;
-    margin: 12px 0;
-    position: relative;
-    padding-left: 25px;
+.smilenation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-.history-page .core-values ul li::before {
-    content: '✔';
-    font-size: 1rem;
-    color: #3c4b93;
-    position: absolute;
-    left: 0;
-    top: 2px;
+.smilenation-card-primary {
+    background-color: #769fcd;
+    color: #fff;
 }
 
-.history-page .cta {
+.smilenation-card-secondary {
+    background-color:  #769fcd;
+    color: #fff;
+}
+
+.smilenation-card-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.smilenation-card-title:hover {
+    color: #dfe6fd; /* Softer hover color */
+}
+
+.smilenation-card-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    transition: opacity 0.3s ease;
+}
+
+.smilenation-card:hover .smilenation-card-text {
+    opacity: 0.85;
+}
+
+/* Values Section */
+.smilenation-values {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.smilenation-value-item {
+    background-color: #f0f8ff; /* Soft pastel blue */
+    color: #444;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.smilenation-value-item:hover {
+    transform: translateY(-5px);
+    background-color: #e6f0f8; /* Slightly darker pastel blue on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.smilenation-value-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4a6fa5; /* Muted blue for consistency */
+}
+
+.smilenation-value-item p {
+    font-size: 16px;
+    color: #555; /* Neutral grey for readability */
+}
+
+/* Vision Section */
+.smilenation-vision {
+    background-color: #eef4fa; /* Soft pastel blue */
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.smilenation-vision p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+    transition: color 0.3s ease;
+}
+
+.smilenation-vision p:hover {
+    color: #4a6fa5;
+}
+
+/* Get Involved Section */
+.smilenation-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* "Join Us Today" link styling */
+.smilenation-link {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff; /* White text for sharp contrast */
+    background-color: #91b2bb; /* Bright red background */
+    border-radius: 10px;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(255, 107, 107, 0.4); /* Engraved effect */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* Hover and active states */
+.smilenation-link:hover {
+    background-color: #3a5961; /* Slightly darker red */
+    color: #fff; /* Retain white text */
+    box-shadow: inset 0 6px 8px rgba(0, 0, 0, 0.3), 0 8px 15px rgba(232, 92, 92, 0.5); /* Enhance engraved effect */
+    transform: scale(1.05); /* Add scaling effect */
+}
+
+.smilenation-link:active {
+    transform: scale(0.97); /* Press-down effect */
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(232, 92, 92, 0.3);
+}
+
+.smilenation-details {
     margin-top: 50px;
 }
 
-.history-page .cta a {
-    font-size: 1.3rem;
-    font-weight: 600; /* Bolder font */
-    color: #fff;
-    background: linear-gradient(135deg, #6b8e23, #3c4b93);
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.smilenation-subtitle {
+    font-size: 26px;
+    font-weight: 700;
+    color: #4a6fa5;
+    margin-bottom: 20px;
+    text-transform: capitalize;
 }
 
-.history-page .cta a:hover {
-    background: linear-gradient(135deg, #3c4b93, #6b8e23);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
 
 /* Footer Container */
 .footer-container {
