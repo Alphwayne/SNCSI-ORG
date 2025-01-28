@@ -27,204 +27,202 @@ section {
     margin-bottom: 50px;
 }
 
-/* Navbar Background with Isolated Slash */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+/* Navbar Background with Isolated Slash */ 
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 20px; 
     background: linear-gradient(135deg, 
         #ffffff 20%, 
-        transparent 20%, /* Transparent to create sharp diagonal separation */
-        #1e3c72 21%, /* Start blue gradient after the slash */
-        #2a5298); /* Continue deep blue gradient */
-    color: #ffffff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transparent 20%, /* Transparent to create sharp diagonal separation */ 
+        #3a6f5a 21%, /* Soft green */ 
+        #264653); /* Darker green */ 
+    color: #ffffff; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     isolation: isolate; 
-}
+} 
 
-/* Scoped tiny stars for navbar */
-.navbar::before,
-.navbar::after {
+/* Scoped tiny stars for navbar */ 
+.navbar::before, 
+.navbar::after { 
     content: "★"; 
-    font-size: 20px;
-    position: absolute;
-    bottom: 10px;
+    font-size: 20px; 
+    position: absolute; 
+    bottom: 10px; 
     pointer-events: none; 
-}
+} 
 
-/* Left star with navbar gradient color */
-.navbar::before {
+/* Left star with navbar gradient color */ 
+.navbar::before { 
     left: 10px; 
-    background: linear-gradient(135deg, #1e3c72, #2a5298); 
+    background: linear-gradient(135deg, #3a6f5a, #264653); 
     background-clip: text; 
     -webkit-background-clip: text; 
     color: transparent; 
-}
+} 
 
-/* Right star ... white */
-.navbar::after {
+/* Right star ... white */ 
+.navbar::after { 
     right: 10px; 
-    color: #ffffff;
-}
-
-
-
-/* Logo */
-.navbar-logo img {
-    height: 100px;
-    width: 150px;
-    z-index: 1; /* Ensure logo stays visible */
-}
-
-/* Navbar Links */
-.navbar-links {
-    display: flex;
-    gap: 30px;
-    font-size: 16px;
-    font-family: 'Cinzel Decorative', cursive;
-}
-
-/* Styling for Links */
-.navbar-links a {
-    color: #e8efff; 
-    text-decoration: none;
-    position: relative;
-    padding: 5px;
-    transition: all 0.3s ease;
-}
-
-/* Hover Effect */
-.navbar-links a:hover {
-    background: linear-gradient(135deg, #667d9a, #323989); 
     color: #ffffff; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    border-radius: 8px;
-    transform: scale(1.1);
-}
-/*  "Home" nav link */
-.navbar-links .home-link {
-    color: #e8efff; 
-    text-decoration: none;
-    position: relative;
-    padding: 5px;
-    transition: all 0.3s ease;
-}
+} 
 
-/* Hover Effect for Home link */
-.navbar-links .home-link:hover {
-    background: linear-gradient(135deg, #667d9a, #323989); 
+/* Logo */ 
+.navbar-logo img { 
+    height: 100px; 
+    width: 150px; 
+    z-index: 1; /* Ensure logo stays visible */ 
+} 
+
+/* Navbar Links */ 
+.navbar-links { 
+    display: flex; 
+    gap: 30px; 
+    font-size: 16px; 
+    font-family: 'Cinzel Decorative', cursive; 
+} 
+
+/* Styling for Links */ 
+.navbar-links a { 
+    color: #d0e8e1; /* Soft muted green */ 
+    text-decoration: none; 
+    position: relative; 
+    padding: 5px; 
+    transition: all 0.3s ease; 
+} 
+
+/* Hover Effect for Navbar Links */ 
+.navbar-links a:hover { 
+    background: #2e8b57; /* Rich mint green for hover */ 
     color: #ffffff; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    border-radius: 8px;
-    transform: scale(1.1);
-}
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+    border-radius: 8px; 
+    transform: scale(1.1); 
+} 
 
+/*  "Home" nav link */ 
+.navbar-links .home-link { 
+    color: #d0e8e1; 
+    text-decoration: none; 
+    position: relative; 
+    padding: 5px; 
+    transition: all 0.3s ease; 
+} 
 
-/* Donate Button */
-.navbar-donate a {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Cinzel Decorative', cursive;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc); 
-    box-shadow: 0 4px 12px rgba(106, 17, 203, 0.6);
-    transition: all 0.3s ease-in-out;
-}
-
-.navbar-donate a:hover {
-    background: linear-gradient(135deg, #2575fc, #6a11cb); 
-    box-shadow: 0 6px 15px rgba(106, 17, 203, 0.8);
-    transform: translateY(-2px);
-}
-
-/* Dropdown Styling */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-toggle {
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'Cinzel Decorative', cursive;
-    color: #e8efff;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: linear-gradient(135deg, #6e7fab, #264472); 
-    border-radius: 12px;
-    top: 100%;
-    left: 0;
-    padding: 10px;
-    z-index: 1;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-}
-
-/* Dropdown Links */
-.dropdown-content a {
-    display: block;
-    padding: 10px 15px;
+/* Hover Effect for Home link */ 
+.navbar-links .home-link:hover { 
+    background: #2e8b57; /* Rich mint green for hover */ 
     color: #ffffff; 
-    text-decoration: none;
-    font-family: 'Cinzel Decorative', cursive;
-    transition: all 0.3s ease;
-    border-radius: 5px;
-}
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+    border-radius: 8px; 
+    transform: scale(1.1); 
+} 
 
-/* Hover effect for dropdown items */
-.dropdown-content a:hover {
-    background: linear-gradient(135deg, #6d74b1, #4035d4); 
-    color: #2a2a2a; /* Contrasting dark text */
-    transform: translateX(8px);
-}
-
-/* Show the dropdown on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Submenu Styling */
-.dropdown-submenu {
-    position: relative;
-}
-
-.dropdown-submenu-content {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background: linear-gradient(135deg, #7f7fd5, #1c2941, #2a4c69); 
-    border-radius: 12px;
-    padding: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-}
-
-/* Submenu Links */
-.dropdown-submenu-content a {
-    display: block;
-    padding: 10px 15px;
+/* Donate Button */ 
+.navbar-donate a { 
     color: #ffffff; 
-    text-decoration: none;
-    font-family: 'Cinzel Decorative', cursive;
-    transition: all 0.3s ease;
-    border-radius: 5px;
+    font-size: 18px; 
+    font-weight: bold; 
+    font-family: 'Cinzel Decorative', cursive; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    background: #2e8b57; /* Rich mint green for donate button */ 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); 
+    transition: all 0.3s ease-in-out; 
+} 
+
+.navbar-donate a:hover { 
+    background: #249f57; /* Darker mint green on hover */ 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8); 
+    transform: translateY(-2px); 
+} 
+
+/* Dropdown Styling */ 
+.dropdown { 
+    position: relative; 
+} 
+
+.dropdown-toggle { 
+    cursor: pointer; 
+    display: inline-block; 
+    font-family: 'Cinzel Decorative', cursive; 
+    color: #d0e8e1; 
+} 
+
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    background: #2e8b57; /* Rich mint green for dropdown background */ 
+    border-radius: 12px; 
+    top: 100%; 
+    left: 0; 
+    padding: 10px; 
+    z-index: 1; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+} 
+
+/* Dropdown Links */ 
+.dropdown-content a { 
+    display: block; 
+    padding: 10px 15px; 
+    color: #ffffff; 
+    text-decoration: none; 
+    font-family: 'Cinzel Decorative', cursive; 
+    transition: all 0.3s ease; 
+    border-radius: 5px; 
+} 
+
+/* Hover effect for dropdown items */ 
+.dropdown-content a:hover { 
+    background: #249f57; /* Darker mint green for hover effect */ 
+    color: #ffffff; 
+    transform: translateX(8px); 
+} 
+
+/* Show the dropdown on hover */ 
+.dropdown:hover .dropdown-content { 
+    display: block; 
+} 
+
+/* Submenu Styling */ 
+.dropdown-submenu { 
+    position: relative; 
+} 
+
+.dropdown-submenu-content { 
+    display: none; 
+    position: absolute; 
+    top: 0; 
+    left: 100%; 
+    background: #2e8b57; /* Rich mint green for submenu background */ 
+    border-radius: 12px; 
+    padding: 10px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+} 
+
+/* Submenu Links */ 
+.dropdown-submenu-content a { 
+    display: block; 
+    padding: 10px 15px; 
+    color: #ffffff; 
+    text-decoration: none; 
+    font-family: 'Cinzel Decorative', cursive; 
+    transition: all 0.3s ease; 
+    border-radius: 5px; 
+} 
+
+/* Submenu hover effect */ 
+.dropdown-submenu-content a:hover { 
+    background: #249f57; /* Darker mint green for submenu hover */ 
 }
 
-/* Submenu hover effect */
-.dropdown-submenu-content a:hover {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4); 
-    transform: translateX(8px);
-}
 
 /* Shows submenu on hover */
 .dropdown:hover .dropdown-submenu-content {
@@ -1383,7 +1381,7 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
-    background: linear-gradient(135deg, #2a5298, #1e3c72); 
+    background: linear-gradient(135deg, #3a6f5a, #264653);  /* Matching greens from navbar */
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -1398,7 +1396,7 @@ section {
 .footer-logo {
     font-size: 28px;
     font-weight: bold;
-    color: #f1f1f1;
+    color: #d0e8e1;  /* Soft green from navbar */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 15px;
 }
@@ -1407,7 +1405,7 @@ section {
 .footer-description {
     font-size: 16px;
     line-height: 1.6;
-    color: #dcdcdc; 
+    color: #dcdcdc;  /* Light gray to maintain contrast */
     margin-bottom: 20px;
 }
 
@@ -1415,7 +1413,7 @@ section {
 .footer-links h4, .footer-socials h4 {
     font-size: 22px;
     margin-bottom: 15px;
-    color: #f1f1f1;
+    color: #d0e8e1;  /* Soft green */
     font-family: 'Cinzel Decorative', cursive;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
@@ -1445,13 +1443,13 @@ section {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #f1f1f1;
+    background-color: #d0e8e1; /* Soft green */
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #ff6f61; 
+    color: #ff6f61; /* Muted coral */
     transform: scale(1.05);
 }
 
@@ -1496,7 +1494,7 @@ section {
 }
 
 .social-link:hover {
-    color: #6a11cb; 
+    color: #6a11cb; /* Vibrant purple for hover */
     transform: translateY(-5px);
 }
 
