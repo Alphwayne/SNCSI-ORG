@@ -1168,8 +1168,8 @@ section {
 /* Smilenation Section */
 .smilenation-section {
     padding: 30px 20px 80px;
-    color: #444;
-    background-color: #f9fafb; 
+    color: #333;
+    background-color: #f4f8f3; 
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     margin: 40px auto;
@@ -1195,7 +1195,7 @@ section {
 .smilenation-title {
     font-size: 42px;
     font-weight: 700;
-    color: #4a6fa5; 
+    color: #2e6d43; 
     margin-bottom: 20px;
     text-transform: capitalize;
     letter-spacing: 1.5px;
@@ -1205,7 +1205,7 @@ section {
 .smilenation-text {
     font-size: 18px;
     line-height: 1.7;
-    color: #555; 
+    color: #444;
     margin-bottom: 30px;
 }
 
@@ -1225,7 +1225,7 @@ section {
 }
 
 .smilenation-image:hover .smilenation-img {
-    transform: scale(1.05); /* Gentle zoom */
+    transform: scale(1.05);
 }
 
 /* Cards Section */
@@ -1238,7 +1238,7 @@ section {
 }
 
 .smilenation-card {
-    background-color: #ffffff; 
+    background-color: #f5e6d9; 
     padding: 25px;
     border-radius: 12px;
     flex: 1;
@@ -1253,32 +1253,22 @@ section {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-.smilenation-card-primary {
-    background-color: #769fcd;
-    color: #fff;
-}
-
-.smilenation-card-secondary {
-    background-color:  #769fcd;
-    color: #fff;
-}
-
 .smilenation-card-title {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #fff;
+    color: #2e6d43;
     transition: color 0.3s ease;
 }
 
 .smilenation-card-title:hover {
-    color: #dfe6fd;
+    color: #1f4e33;
 }
 
 .smilenation-card-text {
     font-size: 19px;
     line-height: 1.6;
-    color: #fff;
+    color: #333;
     transition: opacity 0.3s ease;
 }
 
@@ -1286,7 +1276,7 @@ section {
     opacity: 0.85;
 }
 
-/* Values Section */
+/* Smaller Cards (Values Section) */
 .smilenation-values {
     display: flex;
     gap: 30px;
@@ -1295,7 +1285,7 @@ section {
 }
 
 .smilenation-value-item {
-    background-color: #f0f8ff; 
+    background-color: #f5e6d9; 
     color: #444;
     padding: 20px;
     border-radius: 12px;
@@ -1307,14 +1297,14 @@ section {
 
 .smilenation-value-item:hover {
     transform: translateY(-5px);
-    background-color: #e6f0f8; 
+    background-color: #f2ddcd; 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .smilenation-value-item h3 {
     font-size: 23px;
     margin-bottom: 10px;
-    color: #4a6fa5; 
+    color: #2e6d43;
 }
 
 .smilenation-value-item p {
@@ -1330,7 +1320,7 @@ section {
 }
 
 .smilenation-vision p:hover {
-    color: #4a6fa5;
+    color: #2e6d43;
 }
 
 /* Get Involved Section */
@@ -1347,10 +1337,10 @@ section {
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
-    color: #fff; 
-    background-color: #3552b2; 
+    color: #fff;
+    background-color: #2e6d43; 
     border-radius: 10px;
-    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(93, 51, 140, 0.4);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     text-transform: uppercase;
     display: inline-block;
@@ -1358,15 +1348,15 @@ section {
 
 /* Hover and active states */
 .smilenation-link:hover {
-    background-color: #3a5961; 
-    color: #fff; 
-    box-shadow: inset 0 6px 8px rgba(0, 0, 0, 0.3), 0 8px 15px rgba(232, 92, 92, 0.5); 
+    background-color: #1f4e33;
+    color: #fff;
+    box-shadow: inset 0 6px 8px rgba(0, 0, 0, 0.3), 0 8px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
 }
 
 .smilenation-link:active {
-    transform: scale(0.97); /* Press-down effect */
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(232, 92, 92, 0.3);
+    transform: scale(0.97);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .smilenation-details {
@@ -1376,10 +1366,11 @@ section {
 .smilenation-subtitle {
     font-size: 26px;
     font-weight: 700;
-    color: #4a6fa5;
+    color: #2e6d43;
     margin-bottom: 20px;
     text-transform: capitalize;
 }
+
 
 
 /* Footer Container */
@@ -1504,7 +1495,7 @@ section {
 }
 
 .social-link:hover {
-    color: #6a11cb; /* Vibrant purple for hover */
+    color:  #ff6f61; 
     transform: translateY(-5px);
 }
 
