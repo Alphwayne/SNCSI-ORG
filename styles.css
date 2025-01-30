@@ -835,7 +835,7 @@ section {
 .card-link {
     display: block;
     font-size: 1rem; 
-    color: #a3b9c5; 
+    color: #f8f8f8; 
     text-decoration: none;
     margin-bottom: 6px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
