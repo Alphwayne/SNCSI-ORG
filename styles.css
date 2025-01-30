@@ -12,10 +12,21 @@ html {
 
 /* Ensure the page has content below */
 body {
-    padding-top: 100px; 
+    padding-top: 88px; 
     background: linear-gradient(135deg, rgba(240, 235, 235, 0.9), rgba(245, 241, 241, 0.9));
     color: #333;
 }
+.hexagon-banner {
+    background-image: url('images/com 4.webp'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 5px 0; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+    background-blend-mode: overlay;
+}
+
+
 
 /* makes page scrollable */
 html, body {
