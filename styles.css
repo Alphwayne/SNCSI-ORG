@@ -956,18 +956,19 @@ section {
     }
 }
 
-  /* Educational Section Styling */
-  .educational-section {
+ /* Educational Section Styling */
+.educational-section {
     padding: 60px 20px;
-    background: linear-gradient(135deg, #f7f7f7, #e3e6f3);
+    background: linear-gradient(135deg, #faf3eb, #e9e1d7); 
     text-align: center;
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Merriweather', serif;
+    border-radius: 12px;
 }
 
 .educational-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #3c4b93;
+    color: #2e6d43; 
 }
 
 .educational-links {
@@ -978,64 +979,73 @@ section {
 }
 
 .educational-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #f5e6d9; 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
     max-width: 300px;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .educational-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
 }
 
 .educational-card img {
     width: 100%;
     height: auto;
-    border-bottom: 3px solid #3c4b93;
+    border-bottom: 3px solid #2e6d43; 
 }
 
 .educational-card h3 {
     font-size: 1.5rem;
     margin: 15px 0;
-    color: #333;
+    color: #2e6d43; 
 }
 
 .educational-card p {
     padding: 0 15px;
-    color: #666;
+    color: #555;
+    font-size: 1.1rem;
 }
 
 .educational-card a {
     display: inline-block;
     margin: 15px 0;
     padding: 10px 20px;
-    background: #3c4b93;
+    background: #2e6d43; 
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background 0.3s;
 }
 
 .educational-card a:hover {
-    background: #5c6bbf;
+    background: #1f4e33;
 }
 
-  /* Equipping Project Section Styling */
-  .project-equipping {
+/* Equipping Project Section Styling */
+.project-equipping {
     padding: 60px 20px;
-    background: linear-gradient(135deg, #f9f9f9, #e9effa);
-    font-family: 'Cinzel Decorative', cursive;
+    background: linear-gradient(135deg, #f7f1e6, #e8dbc8); 
+    font-family: 'Merriweather', serif;
+    border-radius: 12px;
 }
 
 .project-equipping h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20px;
-    color: #3c4b93;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    font-weight: 600; 
+    background: linear-gradient(135deg, #d4af37, #8b9a6f); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+    background-clip: text; 
 }
 
 .project-equipping p {
@@ -1043,7 +1053,7 @@ section {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 40px;
-    color: #555;
+    color: #555; 
 }
 
 .gallery {
@@ -1074,7 +1084,7 @@ section {
 /* Children's Day Engagement Section Styling */
 .childrens-day-engagement {
     padding: 60px 20px;
-    background: linear-gradient(135deg, #fff5e6, #ffe6cc);
+    background: linear-gradient(135deg, #faf3eb, #e9e1d7); 
     font-family: 'Cinzel Decorative', cursive;
 }
 
@@ -1082,7 +1092,13 @@ section {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20px;
-    color: #d17a22;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    font-weight: 600; 
+    background: linear-gradient(135deg, #d4af37, #8b9a6f); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+    background-clip: text; 
 }
 
 .childrens-day-engagement p {
@@ -1090,7 +1106,7 @@ section {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 40px;
-    color: #555;
+    color: #555; 
 }
 
 .childrens-day-engagement .gallery {
@@ -1117,6 +1133,7 @@ section {
 .childrens-day-engagement .gallery img:active {
     transform: scale(0.95);
 }
+
 
 /* Orphanage Outreach Section Styling */
 .orphanage-outreach {
