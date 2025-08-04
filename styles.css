@@ -17,11 +17,11 @@ body {
     color: #333;
 }
 .hexagon-banner {
-    background-image: url('images/com 4.webp'); /* Replace with your image URL */
+    background-image: url('images/com 4.webp'); /* image URL */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 5px 0; /* Adjust as needed */
+    padding: 5px 0;
     background-color: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
     background-blend-mode: overlay;
 }
@@ -245,26 +245,6 @@ section {
     display: block;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-
-     /* Navbar Styling */
-    .navbar {
-        flex-direction: column;
-        padding: 10px 15px;
-    }
-
-    .navbar-links {
-        flex-direction: column;
-        gap: 10px;
-        font-size: 14px;
-    }
-
-    .navbar-logo img {
-        height: 80px;
-        width: auto;
-    }
-}
 
 
 /* Hexagon Banner Section */
@@ -336,29 +316,6 @@ section {
     }
 }
 
-/* Responsive Design for Hexagons */
-@media screen and (max-width: 768px) {
-
-    /*  Hexagons */
-    .hexagon-banner {
-        flex-direction: column;
-        gap: 20px;
-        height: auto;
-    }
-
-    .hexagon {
-        max-width: 100%;
-        height: 300px;
-    }
-
-    .hexagon-inner .hexagon-images {
-        width: 200%;
-    }
-
-    .hexagon-inner .hexagon-images img {
-        width: 50%;
-    }
-}
 
 /* Info Nav Section */
 .info-nav-section {
@@ -634,7 +591,6 @@ section {
 }
 
 
-
 /* About Us Section */
 .about-us {
     display: flex;
@@ -746,6 +702,283 @@ section {
         background-image: url('images/about 1.jpg');
     }
 }
+
+/* ---------- MOBILE NAVBAR IMPROVEMENT ---------- */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 7px;
+      position: relative;
+    }
+
+    .navbar-links,
+    .navbar-donate {
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .navbar-links a,
+    .navbar-donate a {
+      width: 100%;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .dropdown-content {
+      position: static;
+      box-shadow: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  }
+
+/* ---------- hexagon display to full banner on view ---------- */
+@media (max-width: 768px) {
+  .hexagon-banner {
+    width: 100%;
+    height:50vh;
+    padding: 0;
+    margin: 0;
+    background: none;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .hexagon,
+  .hexagon-inner {
+    all: unset;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    border-radius: 20px;
+  }
+
+  .hexagon-images {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slideBanner 12s infinite linear;
+    border-radius: 20px;
+  }
+
+  .hexagon-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex: 1 0 100%;
+    border-radius: 20px;
+  }
+
+  @keyframes slideBanner {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+  }
+}
+
+/* ---------- info nav mobile view ---------- */
+@media (max-width: 768px) {
+  .info-nav-section {
+    padding: 20px 10px;
+  }
+
+  .info-display-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .info-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .info-card ul {
+    padding-left: 20px;
+  }
+
+  .info-card li {
+    margin-bottom: 5px;
+  }
+}
+
+/* ---------- ABOUT US SECTION FIX ---------- */
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-text {
+    padding: 0;
+  }
+
+  .about-images {
+    margin-top: 20px;
+  }
+
+  .image-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-header {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .smilenation-section {
+    padding: 24px 16px 60px;
+    background-color: #f4f8f3;
+  }
+
+  .smilenation-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .smilenation-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .smilenation-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .smilenation-content {
+    text-align: left;
+    width: 100%;
+  }
+
+  .smilenation-title {
+    font-size: 28px;
+    color: #2e6d43;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .smilenation-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+  }
+
+  .smilenation-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .smilenation-card {
+    background-color: #ffffff;
+    border-left: 4px solid #2e6d43;
+    border-radius: 10px;
+    padding: 18px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .smilenation-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e6d43;
+    margin-bottom: 10px;
+  }
+
+  .smilenation-card-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  .smilenation-values {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 36px;
+  }
+
+  .smilenation-value-item {
+    background-color: #f5e6d9;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  }
+
+  .smilenation-value-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #2e6d43;
+    margin-bottom: 6px;
+  }
+
+  .smilenation-value-item p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+  }
+
+  .smilenation-subtitle {
+    font-size: 22px;
+    color: #2e6d43;
+    font-weight: 700;
+    margin: 40px 0 16px;
+  }
+
+  .smilenation-link {
+    display: block;
+    width: 100%;
+    background-color: #2e6d43;
+    color: #fff;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 16px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+
+  .smilenation-link:hover {
+    background-color: #1f4e33;
+    transform: scale(1.02);
+  }
+
+  .smilenation-details {
+    margin-top: 40px;
+  }
+}
+
 
 /* Contact Section */
 .contact-info-modern {
