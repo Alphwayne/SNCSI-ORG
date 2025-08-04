@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* ---------- GLOBAL FONT RESET ---------- */
+body, html, * {
+  font-family: Arial, sans-serif !important;
+}
+
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
@@ -95,7 +100,7 @@ section {
 .navbar-links { 
     display: flex; 
     gap: 30px; 
-    font-size: 16px; 
+    font-size: 20px; 
     font-family: 'Cinzel Decorative', cursive; 
 } 
 
