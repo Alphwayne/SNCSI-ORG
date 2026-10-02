@@ -20,8 +20,24 @@ function HomePage() {
           <div className="hero-footnote">Rooted in service. Measured in transformed lives.</div>
         </div>
         <div className="hero-visual">
-          <div className="hero-image-wrap"><img src="/images/banner-1.jpg" alt="Children sharing a joyful moment together" /></div>
+          <div className="hero-image-wrap"><img src="/images/banner-2.jpg" alt="Children sharing a joyful moment together" /></div>
           <div className="hero-note"><span>Giving smiles,<br /><strong>reigniting hope.</strong></span></div>
+        </div>
+      </section>
+
+      <section className="video-feature shell" aria-labelledby="video-title">
+        <div className="video-feature-copy">
+          <span className="eyebrow">From the field</span>
+          <h2 id="video-title">See the work.<br /><em>Feel the hope.</em></h2>
+          <p>This is SmileNation in motion — volunteers, children, and communities making room for joy, care, and possibility together.</p>
+          <a className="text-link" href="#programs">Explore the programmes</a>
+        </div>
+        <div className="video-frame">
+          <video className="impact-video" controls autoPlay muted loop playsInline preload="metadata" poster="/images/smilenation-outreach-poster.jpg">
+            <source src="/images/smilenation-outreach.mp4" type="video/mp4" />
+            Your browser does not support embedded video. <a href="/images/smilenation-outreach.mp4">Watch the video</a>.
+          </video>
+          <span className="video-caption">SmileNation outreach · giving smiles, reigniting hope.</span>
         </div>
       </section>
 

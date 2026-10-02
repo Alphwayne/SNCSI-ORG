@@ -1,0 +1,8 @@
+{
+  "routes": [
+    { "path": "/", "title": "Home" },
+    { "path": "/donate", "title": "Support SmileNation" },
+    { "path": "/approach", "title": "Our approach" },
+    { "path": "/programs/:slug", "title": "Programme detail" }
+  ]
+}
